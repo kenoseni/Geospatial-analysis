@@ -17,7 +17,7 @@ build/gz_2010_us_050_00_20m.shp: build/gz_2010_us_050_00_20m.zip
 	unzip -od $(dir $@) $<
 	touch $@
 
-# Download the shapefile   
+# Download the shapefile
 build/gz_2010_us_050_00_20m.zip:
 	mkdir -p $(dir $@)
 	curl -o $@ https://www2.census.gov/geo/tiger/GENZ2010/$(notdir $@)
